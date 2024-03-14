@@ -7,40 +7,16 @@
   </head>
   <body>
     <center>
-      <button onclick="Push()">Push</button>
-      <button onclick="UnShift()">UnShift</button>
-      <button onclick="Pop()">Pop</button>
-      <button onclick="Shift()">Shift</button>
+      <input type="number" id="num1">
+      <input type="number" id="num2"> <br> <br>
+      <button onclick="Add()">Addition</button> 
+      <button onclick="Sub()">Subtraction</button>
+      <button onclick="Mult()">Multiply</button>
+      <button onclick="Div()">Divide</button>
     </center>
 
-    <script>
-      const names = [];
-
-      function Push() {
-        console.clear();
-        const newUser = prompt("Enter Name");
-        names.push(newUser);
-        console.log(names);
-      }
-
-      function UnShift() {
-        console.clear();
-        const newUser = prompt("Enter Name");
-        names.unshift(newUser);
-        console.log(names);
-      }
-
-      function Pop() {
-        console.clear();
-        names.pop();
-        console.log(names);
-      }
-
-      function Shift() {
-        console.clear();
-        names.shift();
-        console.log(names);
-      }
+    <script src="./index.js">
+      
     </script>
   </body>
 </html>
